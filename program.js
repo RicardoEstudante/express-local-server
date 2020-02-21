@@ -10,10 +10,11 @@ app.get('/sobre', function (req, res) {
   res.sendFile(__dirname + "/html/sobre.html");
 });
 
-
 app.get('/usuario', function (req, res) {
   res.sendFile(__dirname + "/html/usuario.html");
-})
+});
+
+app.get('/')
 
 var server = app.listen(3000, function () {
 
